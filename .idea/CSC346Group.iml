@@ -10,7 +10,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/lib/sqlite-jdbc-3.21.0.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/jsoup-1.11.2.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -19,7 +19,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/lib/jsoup-1.11.2.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/sqlite-jdbc-3.21.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

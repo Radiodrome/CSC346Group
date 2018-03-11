@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcf3f7d7-f90b-41ac-b1ff-2cc0bfd85aad" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/CSC346Group.iml" afterPath="$PROJECT_DIR$/.idea/CSC346Group.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
       <change beforePath="$PROJECT_DIR$/subject-dept.db" afterPath="$PROJECT_DIR$/subject-dept.db" />
     </list>
@@ -13,55 +15,50 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="41" column="89" lean-forward="false" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
+            <state relative-caret-position="194">
+              <caret line="127" column="50" lean-forward="true" selection-start-line="127" selection-start-column="50" selection-end-line="127" selection-end-column="50" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#connect#0;class#Main#0" expanded="false" />
                 <element signature="method#insert#0;class#Main#0" expanded="false" />
-                <element signature="method#insertSection#0;class#Main#0" expanded="false" />
-                <element signature="method#dropTables#0;class#Main#0" expanded="false" />
-                <element signature="method#dropSingleDepartment#0;class#Main#0" expanded="false" />
-                <element signature="method#restoreSingleDepartment#0;class#Main#0" expanded="false" />
-                <element signature="method#createTables#0;class#Main#0" expanded="false" />
-                <element signature="method#loadDB#0;class#Main#0" expanded="false" />
-                <element signature="method#postSections#0;class#Main#0" expanded="false" />
-                <element signature="method#disciplineReport#0;class#Main#0" expanded="false" />
-                <element signature="method#departmentReport#0;class#Main#0" expanded="false" />
-                <element signature="method#parseSeatText#0;class#Main#0" expanded="false" />
-                <element signature="method#parseBeginDateText#0;class#Main#0" expanded="false" />
-                <element signature="method#parseEndDateText#0;class#Main#0" expanded="false" />
-                <element signature="method#parseMessageText#0;class#Main#0" expanded="false" />
-                <element signature="method#parseTermText#0;class#Main#0" expanded="false" />
-                <element signature="method#report#0;class#Main#0" expanded="false" />
-                <element signature="method#main#0;class#Main#0" expanded="false" />
-                <element signature="class#Section#0;class#Main#0" expanded="false" />
                 <element signature="method#Section#0;class#Section#0;class#Main#0" expanded="false" />
                 <element signature="method#Section#1;class#Section#0;class#Main#0" expanded="false" />
                 <element signature="method#toString#0;class#Section#0;class#Main#0" expanded="false" />
-                <marker date="1520803456784" expanded="false" signature="3243:3262" ph="DROP TABLE S... " />
-                <marker date="1520803456784" expanded="false" signature="3366:3388" ph="DROP TABLE D... " />
-                <marker date="1520803456784" expanded="false" signature="3494:3513" ph="DROP TABLE S... " />
-                <marker date="1520803456784" expanded="false" signature="3844:3947" ph="DELETE FROM Sections... " />
-                <marker date="1520803456784" expanded="false" signature="4904:4954" ph="SELECT * FRO... Departments" />
-                <marker date="1520803456784" expanded="false" signature="4904:4973" ph="SELECT * FRO... Departments" />
-                <marker date="1520803456784" expanded="false" signature="10474:10611" ph="CREATE TABLE... Subjects" />
-                <marker date="1520803456784" expanded="false" signature="10736:10885" ph="CREATE TABLE... Departments" />
-                <marker date="1520803456784" expanded="false" signature="10991:11617" ph="CREATE TABLE... Sections" />
-                <marker date="1520803456784" expanded="false" signature="13602:13627" ph="SELECT * FRO... Departments" />
-                <marker date="1520803456784" expanded="false" signature="20101:20164" ph="SELECT * FRO... Sections" />
-                <marker date="1520803456784" expanded="false" signature="22685:22748" ph="SELECT * FRO... Sections" />
-                <marker date="1520803456784" expanded="false" signature="25429:25454" ph="SELECT * FRO... Departments" />
-                <marker date="1520803456784" expanded="false" signature="25871:25893" ph="SELECT * FRO... Subjects" />
+                <marker date="1520808296030" expanded="true" signature="3243:3262" ph="DROP TABLE S... " />
+                <marker date="1520808296030" expanded="true" signature="3366:3388" ph="DROP TABLE D... " />
+                <marker date="1520808296030" expanded="true" signature="3494:3513" ph="DROP TABLE S... " />
+                <marker date="1520808296030" expanded="true" signature="3844:3947" ph="DELETE FROM Sections... " />
+                <marker date="1520808296030" expanded="true" signature="4904:4953" ph="SELECT * FRO... Departments" />
+                <marker date="1520808296030" expanded="true" signature="4904:4970" ph="SELECT * FRO... Departments" />
+                <marker date="1520808296030" expanded="true" signature="4904:4973" ph="SELECT * FRO... Departments" />
+                <marker date="1520808296030" expanded="true" signature="10465:10602" ph="CREATE TABLE... Subjects" />
+                <marker date="1520808296030" expanded="true" signature="10727:10876" ph="CREATE TABLE... Departments" />
+                <marker date="1520808296030" expanded="true" signature="10982:11608" ph="CREATE TABLE... Sections" />
+                <marker date="1520808296030" expanded="true" signature="13593:13618" ph="SELECT * FRO... Departments" />
+                <marker date="1520808296030" expanded="true" signature="20092:20155" ph="SELECT * FRO... Sections" />
+                <marker date="1520808296030" expanded="true" signature="22676:22739" ph="SELECT * FRO... Sections" />
+                <marker date="1520808296030" expanded="true" signature="25420:25445" ph="SELECT * FRO... Departments" />
+                <marker date="1520808296030" expanded="true" signature="25862:25884" ph="SELECT * FRO... Subjects" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>could not find department</find>
+      <find>deprestore</find>
+      <find>restoresingledepartment</find>
+      <find>.post()</find>
+      <find>postsections</find>
+      <find>.post</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -104,42 +101,38 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="CSC346Group" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CSC346Group" type="462c0819:PsiDirectoryNode" />
+              <item name="CSC346Midterm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC346Midterm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CSC346Group" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CSC346Group" type="462c0819:PsiDirectoryNode" />
+              <item name="CSC346Midterm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC346Midterm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CSC346Group" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CSC346Group" type="462c0819:PsiDirectoryNode" />
+              <item name="CSC346Midterm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSC346Midterm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CSC346Group" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/sqlite-jdbc-3.21.0.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -279,43 +272,43 @@
       <workItem from="1520792717750" duration="13000" />
       <workItem from="1520792819861" duration="52000" />
       <workItem from="1520792940688" duration="9575000" />
+      <workItem from="1520804575293" duration="3827000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9666000" />
+    <option name="totallyTimeSpent" value="13493000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1" y="-28" width="1368" height="797" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2160229" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.215959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,60 +319,82 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
+          <line>127</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#connect#0;class#Main#0" expanded="false" />
+            <element signature="method#insert#0;class#Main#0" expanded="false" />
+            <element signature="method#Section#0;class#Section#0;class#Main#0" expanded="false" />
+            <element signature="method#Section#1;class#Section#0;class#Main#0" expanded="false" />
+            <element signature="method#toString#0;class#Section#0;class#Main#0" expanded="false" />
+            <marker date="1520808296030" expanded="true" signature="3243:3262" ph="DROP TABLE S... " />
+            <marker date="1520808296030" expanded="true" signature="3366:3388" ph="DROP TABLE D... " />
+            <marker date="1520808296030" expanded="true" signature="3494:3513" ph="DROP TABLE S... " />
+            <marker date="1520808296030" expanded="true" signature="3844:3947" ph="DELETE FROM Sections... " />
+            <marker date="1520808296030" expanded="true" signature="4904:4953" ph="SELECT * FRO... Departments" />
+            <marker date="1520808296030" expanded="true" signature="4904:4970" ph="SELECT * FRO... Departments" />
+            <marker date="1520808296030" expanded="true" signature="4904:4973" ph="SELECT * FRO... Departments" />
+            <marker date="1520808296030" expanded="true" signature="10465:10602" ph="CREATE TABLE... Subjects" />
+            <marker date="1520808296030" expanded="true" signature="10727:10876" ph="CREATE TABLE... Departments" />
+            <marker date="1520808296030" expanded="true" signature="10982:11608" ph="CREATE TABLE... Sections" />
+            <marker date="1520808296030" expanded="true" signature="13593:13618" ph="SELECT * FRO... Departments" />
+            <marker date="1520808296030" expanded="true" signature="20092:20155" ph="SELECT * FRO... Sections" />
+            <marker date="1520808296030" expanded="true" signature="22676:22739" ph="SELECT * FRO... Sections" />
+            <marker date="1520808296030" expanded="true" signature="25420:25445" ph="SELECT * FRO... Departments" />
+            <marker date="1520808296030" expanded="true" signature="25862:25884" ph="SELECT * FRO... Subjects" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CSC346Midterm.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="41" column="89" lean-forward="false" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
+        <state relative-caret-position="194">
+          <caret line="127" column="50" lean-forward="true" selection-start-line="127" selection-start-column="50" selection-end-line="127" selection-end-column="50" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#connect#0;class#Main#0" expanded="false" />
             <element signature="method#insert#0;class#Main#0" expanded="false" />
-            <element signature="method#insertSection#0;class#Main#0" expanded="false" />
-            <element signature="method#dropTables#0;class#Main#0" expanded="false" />
-            <element signature="method#dropSingleDepartment#0;class#Main#0" expanded="false" />
-            <element signature="method#restoreSingleDepartment#0;class#Main#0" expanded="false" />
-            <element signature="method#createTables#0;class#Main#0" expanded="false" />
-            <element signature="method#loadDB#0;class#Main#0" expanded="false" />
-            <element signature="method#postSections#0;class#Main#0" expanded="false" />
-            <element signature="method#disciplineReport#0;class#Main#0" expanded="false" />
-            <element signature="method#departmentReport#0;class#Main#0" expanded="false" />
-            <element signature="method#parseSeatText#0;class#Main#0" expanded="false" />
-            <element signature="method#parseBeginDateText#0;class#Main#0" expanded="false" />
-            <element signature="method#parseEndDateText#0;class#Main#0" expanded="false" />
-            <element signature="method#parseMessageText#0;class#Main#0" expanded="false" />
-            <element signature="method#parseTermText#0;class#Main#0" expanded="false" />
-            <element signature="method#report#0;class#Main#0" expanded="false" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
-            <element signature="class#Section#0;class#Main#0" expanded="false" />
             <element signature="method#Section#0;class#Section#0;class#Main#0" expanded="false" />
             <element signature="method#Section#1;class#Section#0;class#Main#0" expanded="false" />
             <element signature="method#toString#0;class#Section#0;class#Main#0" expanded="false" />
-            <marker date="1520803456784" expanded="false" signature="3243:3262" ph="DROP TABLE S... " />
-            <marker date="1520803456784" expanded="false" signature="3366:3388" ph="DROP TABLE D... " />
-            <marker date="1520803456784" expanded="false" signature="3494:3513" ph="DROP TABLE S... " />
-            <marker date="1520803456784" expanded="false" signature="3844:3947" ph="DELETE FROM Sections... " />
-            <marker date="1520803456784" expanded="false" signature="4904:4954" ph="SELECT * FRO... Departments" />
-            <marker date="1520803456784" expanded="false" signature="4904:4973" ph="SELECT * FRO... Departments" />
-            <marker date="1520803456784" expanded="false" signature="10474:10611" ph="CREATE TABLE... Subjects" />
-            <marker date="1520803456784" expanded="false" signature="10736:10885" ph="CREATE TABLE... Departments" />
-            <marker date="1520803456784" expanded="false" signature="10991:11617" ph="CREATE TABLE... Sections" />
-            <marker date="1520803456784" expanded="false" signature="13602:13627" ph="SELECT * FRO... Departments" />
-            <marker date="1520803456784" expanded="false" signature="20101:20164" ph="SELECT * FRO... Sections" />
-            <marker date="1520803456784" expanded="false" signature="22685:22748" ph="SELECT * FRO... Sections" />
-            <marker date="1520803456784" expanded="false" signature="25429:25454" ph="SELECT * FRO... Departments" />
-            <marker date="1520803456784" expanded="false" signature="25871:25893" ph="SELECT * FRO... Subjects" />
+            <marker date="1520808296030" expanded="true" signature="3243:3262" ph="DROP TABLE S... " />
+            <marker date="1520808296030" expanded="true" signature="3366:3388" ph="DROP TABLE D... " />
+            <marker date="1520808296030" expanded="true" signature="3494:3513" ph="DROP TABLE S... " />
+            <marker date="1520808296030" expanded="true" signature="3844:3947" ph="DELETE FROM Sections... " />
+            <marker date="1520808296030" expanded="true" signature="4904:4953" ph="SELECT * FRO... Departments" />
+            <marker date="1520808296030" expanded="true" signature="4904:4970" ph="SELECT * FRO... Departments" />
+            <marker date="1520808296030" expanded="true" signature="4904:4973" ph="SELECT * FRO... Departments" />
+            <marker date="1520808296030" expanded="true" signature="10465:10602" ph="CREATE TABLE... Subjects" />
+            <marker date="1520808296030" expanded="true" signature="10727:10876" ph="CREATE TABLE... Departments" />
+            <marker date="1520808296030" expanded="true" signature="10982:11608" ph="CREATE TABLE... Sections" />
+            <marker date="1520808296030" expanded="true" signature="13593:13618" ph="SELECT * FRO... Departments" />
+            <marker date="1520808296030" expanded="true" signature="20092:20155" ph="SELECT * FRO... Sections" />
+            <marker date="1520808296030" expanded="true" signature="22676:22739" ph="SELECT * FRO... Sections" />
+            <marker date="1520808296030" expanded="true" signature="25420:25445" ph="SELECT * FRO... Departments" />
+            <marker date="1520808296030" expanded="true" signature="25862:25884" ph="SELECT * FRO... Subjects" />
           </folding>
         </state>
       </provider>

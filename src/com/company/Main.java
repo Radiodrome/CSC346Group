@@ -132,7 +132,7 @@ public class Main {
                 Document doc = Jsoup.connect("https://aps2.missouriwestern.edu/schedule/Default.asp?tck=201910")
                         .data("course_number", "")
                         .data("subject", "ALL")
-                        .data("department", targetDeptName)//targetDeptName
+                        .data("department", dCode)//targetDeptName
                         .data("display_closed", "YES")
                         .data("course_type", "ALL")
                         .timeout(100 * 1000).post();
@@ -685,7 +685,7 @@ public class Main {
                     if(isCreated) {
                         System.out.println("Input department name to restore... (case sensitive)");
                         input = new Scanner(System.in);
-                        command = input.next();
+                        command = input.nextLine();
                         app.restoreSingleDepartment(command);
                     } else{
                         System.out.println("Database must be created first...");
