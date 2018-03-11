@@ -69,11 +69,10 @@ public class Main {
             pstmt.setString(19, endDate);
             pstmt.setString(20, url);
             pstmt.executeUpdate();
+            //pstmt.execute();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-
-
     }
 
     public void dropTables(){
@@ -89,6 +88,7 @@ public class Main {
                 System.out.println(e.getMessage());
         }
     }
+
     public void dropSingleDepartment(String targetDeptCode) {
         try {
             Connection conn = this.connect();
@@ -125,7 +125,7 @@ public class Main {
             ArrayList<Section> sections = new ArrayList<>();
 
             Connection conn = this.connect();
-            String statement = "SELECT * FROM Departments";
+            String statement = "SELECT * FROM Departments WHERE DEPARTMENT_NAME ='"+targetDeptName+"'";
             ResultSet rs = conn.createStatement().executeQuery(statement);
             while (rs.next()) {
                 String dCode = rs.getString("DEPARTMENT_CODE");
@@ -150,9 +150,9 @@ public class Main {
                                 department = dCode;
                                 crn = tds.get(0).text().trim();
                                 url = urls.get(1).attr("href");
-                                String s = tds.get(1).text().trim(); //getting courseID, discipline, and courseNumber from s
+                                String s = tds.get(1).text().trim();
                                 courseID = s;
-                                discipline = s.substring(0, 3);//tr
+                                discipline = s.substring(0, 3);
                                 courseNumber = s.substring(3, 6);
                                 sectionNumber = Integer.parseInt(tds.get(2).text().trim());
                                 lectureType = tds.get(3).text().trim();
@@ -197,6 +197,8 @@ public class Main {
                 }
             }//end of while(rs.next())
             for (int i = 0; i < sections.size(); i++) {
+                System.out.println(sections.get(i));//for debugging purposes, delete later,
+                // is getting to this point, problem probably lies with insertSections
                 insertSection(sections.get(i).crn,
                         sections.get(i).courseID,
                         sections.get(i).department,
@@ -322,9 +324,9 @@ public class Main {
                                 department = dCode;
                                 crn = tds.get(0).text().trim();
                                 url = urls.get(1).attr("href");
-                                String s = tds.get(1).text().trim(); //getting courseID, discipline, and courseNumber from s
+                                String s = tds.get(1).text().trim();
                                 courseID = s;
-                                discipline = s.substring(0, 3);//tr
+                                discipline = s.substring(0, 3);
                                 courseNumber = s.substring(3, 6);
                                 sectionNumber = Integer.parseInt(tds.get(2).text().trim());
                                 lectureType = tds.get(3).text().trim();
@@ -442,6 +444,8 @@ public class Main {
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
+            }else{
+                System.out.println("Could not find discipline '"+_discipline+"'.");
             }
         }
     }
@@ -489,6 +493,8 @@ public class Main {
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
+            }else{
+                System.out.println("Could not find department '"+_department+"'.");
             }
         }
 
@@ -582,7 +588,7 @@ public class Main {
                     System.out.println("create - Creates the Department and Subjects tables.");
                     System.out.println("load - Scrapes and loads the Department and Subjects tables.");
                     System.out.println("sections - Scrapes and loads the sections to memory.");
-                    System.out.println("drop - Drops the Department and Subjects tables.");
+                    System.out.println("drop - Drops the Department, Subjects, and Sections tables.");
                     System.out.println("report - Prints the department and subject reports");
                     System.out.println("subrep - Prints the course report by subject");
                     System.out.println("deprep - Prints the course report by department");
@@ -597,7 +603,7 @@ public class Main {
 
                 case "create":
                     if(!isCreated) {
-                        System.out.println("Creating the Department and Subjects tables...");
+                        System.out.println("Creating the Department, Subjects and Sections tables...");
                         app.createTables();
                         isCreated = true;
                     } else{
@@ -625,7 +631,7 @@ public class Main {
 
                 case "drop":
                     if(isCreated) {
-                        System.out.println("Dropping the Departments and Subjects tables...");
+                        System.out.println("Dropping the Departments, Subjects and Sections tables...");
                         app.dropTables();
                         isCreated = false;
                     } else{
@@ -677,7 +683,7 @@ public class Main {
 
                 case "deprestore":
                     if(isCreated) {
-                        System.out.println("Input department name to restore...");
+                        System.out.println("Input department name to restore... (case sensitive)");
                         input = new Scanner(System.in);
                         command = input.next();
                         app.restoreSingleDepartment(command);
