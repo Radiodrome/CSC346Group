@@ -100,7 +100,7 @@ public class Main {
         }
     }
 
-    public void restoreSingleDepartment(String targetDeptName) {
+    public void restoreSingleDepartment(String targetDeptCode) {
         try {
             int hours;
             int maximumEnrollment = 0;
@@ -125,7 +125,7 @@ public class Main {
             ArrayList<Section> sections = new ArrayList<>();
 
             Connection conn = this.connect();
-            String statement = "SELECT * FROM Departments WHERE DEPARTMENT_NAME ='"+targetDeptName+"'";
+            String statement = "SELECT * FROM Departments WHERE DEPARTMENT_CODE ='"+targetDeptCode+"'";
             ResultSet rs = conn.createStatement().executeQuery(statement);
             while (rs.next()) {
                 String dCode = rs.getString("DEPARTMENT_CODE");
@@ -404,100 +404,87 @@ public class Main {
                 "MTE", "COM", "JOU", "ACT", "CSC", "MAT", "PHY", "LAW", "LAT", "SWK", "ECO", "PSC", "SOC", "EDU", "TSL", "CET", "EET", "EGT",
                 "MET", "CHI", "ENG", "EPR", "ETC", "FRE", "GER", "SPA", "PED", "RSM", "SFM", "GEO", "HIS", "HUM", "PHL", "REL", "HON",
                 "MIL", "MUS", ""};
-        for (int i = 0; i < disciplinesArray.length; i++) {
-            if (_discipline.equals(disciplinesArray[i])) {
-                try {
-                    int hours;
-                    int sectionNumber;
-                    String courseID;
-                    String crn;
-                    String endDate = "";
-                    String beginDate = "";
-                    String room = "";
-                    String days = "";
-                    String time = "";
-                    String instructor;
-                    String title;
+        try {
+            int hours;
+            int sectionNumber;
+            String courseID;
+            String crn;
+            String endDate = "";
+            String beginDate = "";
+            String room = "";
+            String days = "";
+            String time = "";
+            String instructor;
+            String title;
 
-                    System.out.println("Courses with Discipline: " + _discipline);
-                    System.out.println("------------------------------------------------------------------------------");
+            System.out.println("Courses with Discipline: " + _discipline);
+            System.out.println("------------------------------------------------------------------------------");
 
-                    Connection conn = this.connect();
-                    String statment = "SELECT * FROM Sections WHERE DISCIPLINE = '" + _discipline + "'";
-                    ResultSet rs = conn.createStatement().executeQuery(statment);
-                    while (rs.next()) {
-                        hours = rs.getInt("HOURS");
-                        sectionNumber = rs.getInt("SECTION");
-                        courseID = rs.getString("COURSE_ID");
-                        crn = rs.getString("CRN");
-                        endDate = rs.getString("END_DATE");
-                        beginDate = rs.getString("BEGIN_DATE");
-                        room = rs.getString("ROOM");
-                        days = rs.getString("DAYS");
-                        time = rs.getString("TIME");
-                        instructor = rs.getString("INSTRUCTOR");
-                        title = rs.getString("COURSE_TITLE");
-                        System.out.println("CRN: " + crn + ", TITLE: " + title + ", COURSE ID: " + courseID +
-                                ", BEGIN DATE:" + beginDate + ", END DATE: " + endDate + ", INSTRUCTOR: " + instructor + ", DAYS: " + days +
-                                ", TIME: " + time + ", ROOM: " + room + ", HOURS: " + hours + ", SECTION NUMBER: " + sectionNumber);
-                    }
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }else{
-                System.out.println("Could not find discipline '"+_discipline+"'.");
+            Connection conn = this.connect();
+            String statment = "SELECT * FROM Sections WHERE DISCIPLINE = '" + _discipline + "'";
+            ResultSet rs = conn.createStatement().executeQuery(statment);
+            while (rs.next()) {
+                hours = rs.getInt("HOURS");
+                sectionNumber = rs.getInt("SECTION");
+                courseID = rs.getString("COURSE_ID");
+                crn = rs.getString("CRN");
+                endDate = rs.getString("END_DATE");
+                beginDate = rs.getString("BEGIN_DATE");
+                room = rs.getString("ROOM");
+                days = rs.getString("DAYS");
+                time = rs.getString("TIME");
+                instructor = rs.getString("INSTRUCTOR");
+                title = rs.getString("COURSE_TITLE");
+                System.out.println("CRN: " + crn + ", TITLE: " + title + ", COURSE ID: " + courseID +
+                        ", BEGIN DATE:" + beginDate + ", END DATE: " + endDate + ", INSTRUCTOR: " + instructor + ", DAYS: " + days +
+                        ", TIME: " + time + ", ROOM: " + room + ", HOURS: " + hours + ", SECTION NUMBER: " + sectionNumber);
             }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 
     public void departmentReport(String _department) {
         String[] departmentsArray = {"AF", "ART", "BIO", "BUS", "CHE", "CST", "CSMP", "CJLS", "EPSS", "EDU", "ET", "EFLJ", "GS",
                 "HPER", "HPG", "HON", "MIL", "MUS", "NUR", "PSY", "FINE", "CON"};
-        for (int i = 0; i < departmentsArray.length; i++) {
-            if (_department.equals(departmentsArray[i])) {
-                try {
-                    int hours;
-                    int sectionNumber;
-                    String courseID;
-                    String crn;
-                    String endDate = "";
-                    String beginDate = "";
-                    String room = "";
-                    String days = "";
-                    String time = "";
-                    String instructor;
-                    String title;
+        try {
+            int hours;
+            int sectionNumber;
+            String courseID;
+            String crn;
+            String endDate = "";
+            String beginDate = "";
+            String room = "";
+            String days = "";
+            String time = "";
+            String instructor;
+            String title;
 
-                    System.out.println("Courses with Department: " + _department);
-                    System.out.println("------------------------------------------------------------------------------");
+            System.out.println("Courses with Department: " + _department);
+            System.out.println("------------------------------------------------------------------------------");
 
-                    Connection conn = this.connect();
-                    String statment = "SELECT * FROM Sections WHERE DEPARTMENT = '" + _department + "'";
-                    ResultSet rs = conn.createStatement().executeQuery(statment);
-                    while (rs.next()) {
-                        hours = rs.getInt("HOURS");
-                        sectionNumber = rs.getInt("SECTION");
-                        courseID = rs.getString("COURSE_ID");
-                        crn = rs.getString("CRN");
-                        endDate = rs.getString("END_DATE");
-                        beginDate = rs.getString("BEGIN_DATE");
-                        room = rs.getString("ROOM");
-                        days = rs.getString("DAYS");
-                        time = rs.getString("TIME");
-                        instructor = rs.getString("INSTRUCTOR");
-                        title = rs.getString("COURSE_TITLE");
-                        System.out.println("CRN: " + crn + ", TITLE: " + title + ", COURSE ID: " + courseID +
-                                ", BEGIN DATE:" + beginDate + ", END DATE: " + endDate + ", INSTRUCTOR: " + instructor + ", DAYS: " + days +
-                                ", TIME: " + time + ", ROOM: " + room + ", HOURS: " + hours + ", SECTION NUMBER: " + sectionNumber);
-                    }
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-            }else{
-                System.out.println("Could not find department '"+_department+"'.");
+            Connection conn = this.connect();
+            String statment = "SELECT * FROM Sections WHERE DEPARTMENT = '" + _department + "'";
+            ResultSet rs = conn.createStatement().executeQuery(statment);
+            while (rs.next()) {
+                hours = rs.getInt("HOURS");
+                sectionNumber = rs.getInt("SECTION");
+                courseID = rs.getString("COURSE_ID");
+                crn = rs.getString("CRN");
+                endDate = rs.getString("END_DATE");
+                beginDate = rs.getString("BEGIN_DATE");
+                room = rs.getString("ROOM");
+                days = rs.getString("DAYS");
+                time = rs.getString("TIME");
+                instructor = rs.getString("INSTRUCTOR");
+                title = rs.getString("COURSE_TITLE");
+                System.out.println("CRN: " + crn + ", TITLE: " + title + ", COURSE ID: " + courseID +
+                        ", BEGIN DATE:" + beginDate + ", END DATE: " + endDate + ", INSTRUCTOR: " + instructor + ", DAYS: " + days +
+                        ", TIME: " + time + ", ROOM: " + room + ", HOURS: " + hours + ", SECTION NUMBER: " + sectionNumber);
             }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
-
     }
 
     public void parseSeatText(Section sec, Element seat) {
@@ -683,7 +670,7 @@ public class Main {
 
                 case "deprestore":
                     if(isCreated) {
-                        System.out.println("Input department name to restore... (case sensitive)");
+                        System.out.println("Input department code to restore... (case sensitive)");
                         input = new Scanner(System.in);
                         command = input.nextLine();
                         app.restoreSingleDepartment(command);
